@@ -42,12 +42,14 @@ class HeroViewModel @Inject constructor(
     addSubscription(disposable)
   }
 
+  //sintak berikut merupakan bagian viewmodel untuk menampikan tampilan awal
   private fun showLoading() {
     showWelcomeMessage.set(false)
     showNoDataMessage.set(false)
     showLoading.set(true)
   }
 
+    //sintak berikut merupakan bagian viewmodel untuk menampikan list Hero
   private fun handleResponse(results: List<Hero>) {
     showLoading.set(false)
     showWelcomeMessage.set(false)
@@ -55,12 +57,14 @@ class HeroViewModel @Inject constructor(
     heroes.set(results)
   }
 
+   //sintak untuk menampikan eror jika tidak terhubung ke internet
   private fun handleError(error: Throwable) {
     error.printStackTrace()
     showLoading.set(false)
     showNoDataMessage.set(true)
   }
 
+    //sintak untuk menghapus hasil pencarian untuk memulai pencarian baru
   fun clearSearches() {
     heroes.set(listOf())
     showLoading.set(false)

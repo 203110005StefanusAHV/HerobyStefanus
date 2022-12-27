@@ -6,6 +6,7 @@ import androidx.room.PrimaryKey
 import androidx.room.TypeConverters
 import com.stefanus.app.data.db.converter.StringListConverter
 
+//sintak membuat pemetaan tabel SQLite di database
 @Entity(tableName = "stefanus")
 data class HeroEntity(
   @PrimaryKey

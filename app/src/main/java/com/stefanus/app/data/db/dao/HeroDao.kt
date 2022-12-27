@@ -8,7 +8,7 @@ import androidx.room.Query
 import androidx.room.Update
 import com.stefanus.app.data.db.entity.HeroEntity
 import io.reactivex.Observable
-
+//sintak untuk mengakses database
 @Dao
 interface HeroDao {
 

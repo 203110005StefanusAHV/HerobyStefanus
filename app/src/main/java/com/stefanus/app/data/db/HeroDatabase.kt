@@ -7,6 +7,7 @@ import com.stefanus.app.data.db.converter.StringListConverter
 import com.stefanus.app.data.db.dao.HeroDao
 import com.stefanus.app.data.db.entity.HeroEntity
 
+//sintak untuk menyimpan data ke file teks di perangkat
 @Database(
     entities = [HeroEntity::class],
     version = 1,

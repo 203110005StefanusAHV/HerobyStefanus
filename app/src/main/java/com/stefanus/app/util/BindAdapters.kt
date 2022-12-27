@@ -17,6 +17,7 @@ fun bindVisibility(
   }
 }
 
+//sintak ini digunakan untuk menampikan data dari recycleView berupa list hero
 @BindingAdapter("app:bindHeroes")
 fun bindHeroes(
   view: RecyclerView,

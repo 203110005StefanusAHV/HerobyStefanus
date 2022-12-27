@@ -35,10 +35,12 @@ class HeroViewHolder(
             val palette = Palette.from(resource)
             palette.generate {
               val bgColor = it?.getMutedColor(Color.BLACK) ?: 0
+                //Sintak view untuk menampilkan tulisan dan warna latar
               binding.txtName.setBackgroundColor(bgColor)
             }
           }
         })
+        //Sintak view untuk menampilkan gambar
         .into(binding.imgHero)
   }
 }
