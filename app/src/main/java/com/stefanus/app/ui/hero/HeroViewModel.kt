@@ -15,7 +15,7 @@ import javax.inject.Inject
 class HeroViewModel @Inject constructor(
   private val heroRepository: HeroRepository
 ) : BaseViewModel() {
-
+  //sintak berikut merupakan bagian dari viewmodel untuk menampilkan tampilan awal dan list hero
   val inputTextPublisher = PublishSubject.create<String>()
 
   val showLoading = ObservableField<Boolean>()
